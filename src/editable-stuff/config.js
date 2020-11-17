@@ -52,7 +52,7 @@ const about = {
   imageSize: 375,
   message:
     "My name is Arun Soorya. I’m a graduate of 2020 from Anna University  at Tamil Nadu with a degree in Computer Engineering. I'm most passionate about giving back to the community, and my goal is to pursue this passion within the field of software engineering. In my free time I like working on open source projects.",
-  resume: require("../editable-stuff/resume.pdf"),
+  resume: "https://drive.google.com/file/d/1lNE2JPrTBmg94h_3zxkXK9KRrjWTs4eM/view?usp=sharing",
 };
 
 // PROJECTS SECTION
