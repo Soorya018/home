@@ -39,7 +39,7 @@ const Navigation = React.forwardRef((props, ref) => {
       }`}
       expand="lg"
     >
-      <Navbar.Brand className="brand" href={"/#home"}>
+      <Navbar.Brand className="brand" href={"https://arunsoorya.com" + "/#home"}>
         {`<${mainBody.firstName} />`}
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" className="toggler" />
@@ -47,13 +47,13 @@ const Navigation = React.forwardRef((props, ref) => {
         <Nav className="mr-auto">
           {/* {
             <Nav.Link className="nav-link lead">
-              <Link to={"/blog"}>Blog</Link>
+              <Link to={process.env.PUBLIC_URL + "/blog"}>Blog</Link>
             </Nav.Link>
           } */}
           {repos.show && (
             <Nav.Link
               className="nav-link lead"
-              href={"/#projects"}
+              href={process.env.PUBLIC_URL + "/#projects"}
             >
               Projects
             </Nav.Link>
@@ -69,7 +69,7 @@ const Navigation = React.forwardRef((props, ref) => {
           {about.show && (
             <Nav.Link
               className="nav-link lead"
-              href={"/#aboutme"}
+              href={process.env.PUBLIC_URL + "/#aboutme"}
             >
               About
             </Nav.Link>
@@ -77,7 +77,7 @@ const Navigation = React.forwardRef((props, ref) => {
           {skills.show && (
             <Nav.Link
               className="nav-link lead"
-              href={"/#skills"}
+              href={process.env.PUBLIC_URL + "/#skills"}
             >
               Skills
             </Nav.Link>
